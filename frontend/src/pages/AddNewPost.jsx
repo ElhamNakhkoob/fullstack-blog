@@ -117,7 +117,7 @@ export const AddNewPost = () => {
           type="submit"
           className="w-full bg-[#a2ae9e] text-black font-semibold py-2 px-4 rounded hover:bg-[#bdc5ba] transition"
         >
-          Create Post
+          Create Comment
         </button>
       </form>
     </div>

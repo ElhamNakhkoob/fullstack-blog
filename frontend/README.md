@@ -1,12 +1,41 @@
-# React + Vite
+🧑‍💻 How to Run the Project Locally
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+To run this fullstack blog project on your local machine, follow the steps below:
 
-Currently, two official plugins are available:
+1.  Clone the Repository:
+    git clone git@github.com:ElhamNakhkoob/fullstack-blog.git
+    cd fullstack-blog
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+2.  Backend Setup
+    This will install packages like:
 
-## Expanding the ESLint configuration
+        -- express – for creating the API server
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+        -- sequelize – for interacting with the PostgreSQL database
+
+        -- pg – PostgreSQL driver
+
+        -- cors – for cross-origin requests
+
+        -- Create a .env File
+            PORT=4000
+            PG_URI=postgresql://posts_owner:npg_QWEt8IwdOFy9@ep-white-haze-a91177g5-pooler.gwc.azure.neon.tech/posts?sslmode=require&channel_binding=require
+        -- Start the Backend Server:
+            npm run dev
+
+            http://localhost:4000
+
+3.  Frontend Setup
+    Install Frontend Dependencies
+
+        -- axios
+
+        -- react-router-dom
+
+        -- tailwindcss and daisyUI
+
+        -- npm i
+
+        -- npm run dev
+
+            http://localhost:5173
