@@ -8,7 +8,6 @@ export const PostDetails = () => {
   const [post, setPost] = useState(null);
   const [editing, setEditing] = useState(false);
 
-  // Form state
   const [title, setTitle] = useState("");
   const [cover, setCover] = useState("");
   const [content, setContent] = useState("");
@@ -50,8 +49,6 @@ export const PostDetails = () => {
       setPost({ ...post, ...updatedPost });
       setMessage("Post updated successfully!");
       setMessageType("success");
-
-      // Delay exiting edit mode to let user see message
       setTimeout(() => {
         setMessage("");
         setEditing(false);
@@ -64,8 +61,6 @@ export const PostDetails = () => {
         setMessage("Failed to update post. Please try again.");
       }
       setMessageType("error");
-
-      // Clear message after a delay
       setTimeout(() => setMessage(""), 2000);
     }
   };
@@ -76,7 +71,6 @@ export const PostDetails = () => {
       setMessage("Post deleted successfully!");
       setMessageType("success");
 
-      // Wait 2 seconds before navigating
       setTimeout(() => {
         setMessage("");
         navigate("/");

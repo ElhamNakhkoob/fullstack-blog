@@ -41,15 +41,11 @@ export const Homepage = () => {
             automation and healthcare. This post explores the positive and
             challenging aspects of this shift.
           </p>
-
-          {/* ✅ Replace text with button linking to /newPost */}
           <Link to="/newPost" className="btn btn-primary w-fit mt-2">
             Add Comment
           </Link>
         </div>
       </div>
-
-      {/* 📰 Posts List */}
       {posts.length === 0 ? (
         <div className="text-center text-gray-500">
           No posts available. Please create a new post.
